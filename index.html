@@ -378,6 +378,77 @@
   .reveal { opacity:0; transform:translateY(24px); transition:opacity 0.75s ease,transform 0.75s ease; }
   .reveal.visible { opacity:1; transform:translateY(0); }
   .d1{transition-delay:0.08s;} .d2{transition-delay:0.16s;} .d3{transition-delay:0.24s;}
+@media (max-width: 768px) {
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  header {
+    padding: 20px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .hero {
+    padding: 80px 24px;
+  }
+
+  .hero-heading {
+    font-size: 52px;
+    line-height: 1;
+  }
+
+  .hero-sub {
+    max-width: 100%;
+    font-size: 18px;
+  }
+
+  .marquee-section {
+    overflow: hidden;
+  }
+
+  .services-section,
+  .founder-section {
+    padding: 70px 24px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr !important;
+    width: 100%;
+  }
+
+  .svc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: auto;
+    padding: 28px;
+  }
+
+  .founder-layout {
+    grid-template-columns: 1fr !important;
+    gap: 40px;
+    margin-top: 40px;
+  }
+
+  .founder-img-frame {
+    width: 280px;
+    height: 280px;
+  }
+
+  .founder-copy {
+    width: 100%;
+    text-align: left;
+  }
+
+  .founder-copy p {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+}
 </style>
 </head>
 <body>
